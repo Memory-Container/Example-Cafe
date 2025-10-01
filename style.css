@@ -2,15 +2,9 @@
     color: white;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 html {
-    overflow-y: hidden;
-}
-:root {
-    --header-height: 14vh;
-    --footer-height: 7vh;
-    --content-height: calc(100vh - var(--header-height) - var(--footer-height))
+    overflow-x: hidden;
 }
 li {
     color: black;
@@ -21,14 +15,13 @@ li {
 }
 
 .header {
-    height: var(--header-height);
     background-color: #EA9696;
     width: 100%;
 }
 .header__logo {
     background-color: white;
     width: 100%;
-    height: 9vh;
+    height: 50px;
     text-align: center;
     padding-top: 2vh;
 }
@@ -37,7 +30,6 @@ li {
 }
 .header__navigation {
     width: 100%;
-    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,9 +38,9 @@ li {
     font-weight: bold;
 }
 .header__navigation_item {
-    width: 10vw;
     height: 60%;
     display: flex;
+    width: 13%;
     justify-content: center;
     align-items: center;
     border-right: 1px solid blue;
@@ -61,15 +53,15 @@ li {
 #header__navigation_item_search {
     display: flex;
     justify-content: flex-end;
-    width: 15%;
+    width: 20%;
     border: 0;
 }
 
 .content {
     padding-top: 10px;
     display: flex;
-    height: var(--content-height);
     width: 100%;
+    height: 609px;
 }
 .content__left {
     width: 15%;
@@ -129,9 +121,9 @@ li {
     color: black;
 }
 .content__right {
-    height: calc(var(--content-height) - 9vh);
     background-color: #000000;
     width: 20%;
+    height: 520px;
 }
 .content__right_link {
     color: #EA9696;
